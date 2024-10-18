@@ -1,0 +1,119 @@
+:root {
+    /* Colores principales */
+    --color-primary: #FFD700;   
+    --color-secondary: #000000; 
+    
+    /* Variantes del amarillo */
+    --color-primary-light: #FFEB3B; 
+    --color-primary-dark: #FFC107;  
+  
+    /* Variantes del negro */
+    --color-secondary-light: #333333;
+    --color-secondary-dark: #1A1A1A; 
+  
+    /* Colores de fondo */
+    --background-light: #FFF9C4; 
+    --background-dark: #212121; 
+  
+    /* Colores de texto */
+    --text-primary: #000000;    
+    --text-secondary: #FFD700;   
+    --text-muted: #666666;      
+  
+    /* Colores de borde */
+    --border-color-light: #FFECB3;
+    --border-color-dark: #4D4D4D; 
+  
+    /* Colores de acento */
+    --accent-color: #FF6F00;      
+    --accent-color-dark: #E65100; 
+  
+    /* Colores de estado */
+    --success-color: #FFEB3B; 
+    --warning-color: #FFC107; 
+    --error-color: #FF5722;   
+  }
+  .profile-wrapper {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    background-color: var(--background-dark);
+    padding: 20px;
+    border: 1px solid var(--border-color-dark);
+    box-shadow: #000000 -10px 10px;
+    width: 90%;
+    align-items: center;
+    
+  }
+  
+  .profile-wrapper p{
+    word-break: break-word; /
+  }
+
+  .profile-wrapper .pic img {
+    width: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-wrapper .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-wrapper .name {
+    color: var(--text-secondary);
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .profile-wrapper .email {
+    color: var(--text-muted);
+    margin: 10px 0;
+    font-style: italic;
+  }
+  
+  .profile-wrapper .main-text {
+    word-break: normal;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+  }
+  
+  .profile-wrapper .skills {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text-primary);
+  }
+  
+  @media (max-width: 600px) {
+    .profile-wrapper {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+      padding: 10px; /* Reduce el padding */
+      width: 90%; /* Aumenta el ancho para adaptarse mejor */
+    }
+  
+    .profile-wrapper .pic img {
+      width: 80px; /* Reduce el tamaño de la imagen */
+    }
+  
+    .profile-wrapper .name {
+      font-size: 20px; /* Reduce el tamaño de la fuente */
+    }
+  
+    .profile-wrapper .email {
+      font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+  
+    .profile-wrapper .main-text {
+      font-size: 16px; /* Ajusta el tamaño de la fuente */
+      word-break: break-word; /* Permite que las palabras largas se dividan */
+    }
+  
+    .profile-wrapper .skills {
+      flex-wrap: wrap; /* Permite que los elementos de habilidades se ajusten en varias líneas */
+    }
+  }
+  
