@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Nav />
-     <Profile name="Baba" descrip="Hola Mundo"/>
-     <Profile name="alberto" descrip="No data"/>
-     <Profile name="B" descrip="lorem"/>
+     <Profile name="Baba" email="josemanuelbabaciugheorghiu@gmail.com" descrip="Hola Mundo" img="/siuuu.webp" premium skills="java, js"/>
+     <Profile name="alberto" email="a@gmail.com"  img="" skill={["css", "JavaScript"]}/>
+     <Profile name="B" email="b@gmail.com" descrip="lorem" img=""/>
     </>
   )
 }
